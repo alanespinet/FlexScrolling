@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+section {
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#view {
+	position: relative;
+}
+
+#container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
+#home {
+	background-image: url('../img/header.jpg');
+}
+
+#unreal {
+	background-image: url('../img/unreal.jpg');
+}
+
+#unity {
+	background-image: url('../img/unity.png');
+}
+
+#cryengine {
+	background-image: url('../img/cryengine.jpg');
+}
+
+#valve {
+	background-image: url('../img/valve.jpg');
+}
+
+#menu {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#menu li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	padding: 1em;
+	margin: 0;
+	text-align: center;
+	background-color: #ddd;
+	flex-grow: 1;
+	font-weight: bold;
+	transition: background-color .5s ease-out;
+}
+
+#menu li:hover {
+	cursor: pointer;
+	background-color: #bbb;
+}
+
+#menu li.selected {
+	background-color: #222;
+	color: #eee;
+}
